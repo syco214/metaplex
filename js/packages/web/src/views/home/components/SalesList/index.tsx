@@ -7,6 +7,7 @@ import { useMeta } from '../../../../contexts';
 import { CardLoader } from '../../../../components/MyLoader';
 import { Banner } from '../../../../components/Banner';
 import { HowToBuyModal } from '../../../../components/HowToBuyModal';
+import { Button, Collapse } from 'antd';
 
 import { useAuctionsList } from './hooks/useAuctionsList';
 import { AuctionRenderCard } from '../../../../components/AuctionRenderCard';
@@ -34,7 +35,16 @@ export const SalesListView = () => {
         src="/bhsgbg.png"
         headingText="Bounty Hunter Space Guild Auction House"
         subHeadingText="The Finest Specimen from the Solaris Systems"
-        actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
+        actionComponent={
+          <a href="https://discord.com/invite/bountyhunterspaceguild">
+          <Button
+            type="primary"
+            size="middle"
+            className="action-btn"
+            style={{ width: 200 }}>
+            JOIN THE GUILD
+          </Button>
+          </a>}
         useBannerBg
       />
       <Layout>

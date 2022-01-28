@@ -6,6 +6,7 @@ import { Notifications } from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
 import { MenuOutlined } from '@ant-design/icons';
 import { HowToBuyModal } from '../HowToBuyModal';
+
 import {
   Cog,
   CurrentUserBadge,
@@ -78,10 +79,7 @@ export const MetaplexMenu = () => {
                     onClick={() => setIsModalVisible(false)}
                     className="secondary-btn"
                   />
-                  <HowToBuyModal
-                    onClick={() => setIsModalVisible(false)}
-                    buttonClassName="black-btn"
-                  />
+
                 </div>
               ) : (
                 <>
@@ -130,9 +128,6 @@ export const AppBar = () => {
           <MetaplexMenu />
         </div>
         <div className="app-right">
-          {!connected && (
-            <HowToBuyModal buttonClassName="modal-button-default" />
-          )}
           {!connected && (
             <ConnectButton style={{ height: 48 }} allowWalletChange />
           )}
