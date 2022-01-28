@@ -22,9 +22,12 @@ const getDefaultLinkActions = (connected: boolean) => {
     <Link to={`/artworks`} key={'artwork'}>
       <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
     </Link>,
-    <Link to={`/artists`} key={'artists'}>
-      <Button className="app-btn">Creators</Button>
-    </Link>,
+    <a target="_blank" href="https://bountyhunterspaceguild.com/">
+      <Button className="app-btn">Website</Button>
+    </a>,
+    <a target="_blank" href="https://magiceden.io/creators/bounty_hunter_space_guild">
+      <Button className="app-btn">Marketplace</Button>
+    </a>
   ];
 };
 
@@ -51,14 +54,14 @@ export const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/metaplex-logo.svg'} />}
+          title={<img src={'/bhsg-logo.png'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
           closeIcon={
             <img
               onClick={() => setIsModalVisible(false)}
-              src={'/modals/close.svg'}
+              src={'/bhsg-logo.png'}
             />
           }
         >
@@ -110,7 +113,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img src={'/bhsg-logo.png'} />
     </Link>
   );
 };

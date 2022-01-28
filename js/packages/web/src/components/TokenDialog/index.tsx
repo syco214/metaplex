@@ -100,14 +100,6 @@ export default function TokenDialog({
         <Typography style={{ paddingBottom: "16px", textAlign: 'center', textTransform: 'uppercase', fontWeight: 600 }}>
           Select a token as your auction mint
         </Typography>
-        <Input
-          autoFocus
-          className="input text-field"
-          placeholder="Search token mints"
-          allowClear
-          value={tokenFilter}
-          onChange={(e) => setTokenFilter(e.target.value)}
-        />
       </Col>
       <div className={'dialog-content'}>
         <List style={{padding: '16px 0'}}>
@@ -123,14 +115,6 @@ export default function TokenDialog({
             />
           ))}
         </List>
-        <Search
-          enterButton="Go!"
-          className="input search-text-field"
-          placeholder="Can't find your token? set it here!"
-          allowClear
-          size="large"
-          onSearch={(e) => validateTokenMint(e)}
-        />
       </div>
 
       <Tabs
@@ -143,18 +127,6 @@ export default function TokenDialog({
           className={'token-tab'}
           /*  classes={{ selected: 'tab-selected' }} */
           tab={<span className="tab-title">Main</span>}
-        />
-        <TabPane
-          key={TokenViewState.Wormhole}
-          className={'token-tab'}
-          /* classes={{ selected: 'tab-selected' }} */
-          tab={<span className="tab-title">Wormhole</span>}
-        />
-        <TabPane
-          key={TokenViewState.Sollet}
-          className={'token-tab'}
-          /* classes={{ selected: 'tab-selected' }} */
-          tab={<span className="tab-title">Sollet</span>}
         />
       </Tabs>
     </MetaplexModal>

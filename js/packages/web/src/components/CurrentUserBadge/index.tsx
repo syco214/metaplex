@@ -231,7 +231,7 @@ export const CurrentUserBadge = (props: {
   let image = <Identicon address={publicKey?.toBase58()} style={iconStyle} />;
 
   if (unknownWallet.image) {
-    image = <img src={unknownWallet.image} style={iconStyle} />;
+    image = <img src={'/bot.jpg'} style={iconStyle} />;
   }
 
   return (

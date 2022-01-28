@@ -16,17 +16,7 @@ const MetaAvatarItem = (props: {
     <Avatar
       alt={alt}
       size={size}
-      src={
-        noImage ? (
-          <Identicon
-            alt={alt}
-            address={creator.address}
-            style={{ width: size }}
-          />
-        ) : (
-          image
-        )
-      }
+      src={"/bot.jpg"}
       onError={() => {
         setNoImage(true);
         return false;

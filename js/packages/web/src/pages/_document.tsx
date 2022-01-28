@@ -23,24 +23,24 @@ export default class MetaplexDocument extends Document {
           />
           <link
             rel="icon"
-            type="image/png"
+            type="image/svg"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href="/bhsg.svg"
           />
           <link
             rel="icon"
-            type="image/png"
+            type="image/svg"
             sizes="96x96"
-            href="/favicon-96x96.png"
+            href="/bhsg.svg"
           />
           <link
             rel="icon"
-            type="image/png"
+            type="image/svg"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href="/bhsg.svg"
           />
           <meta name="theme-color" content="#000000" />
-          <meta name="description" content="Metaplex NFT Marketplace" />
+          <meta name="description" content="BHSG Auction House" />
           <link rel="manifest" href="/manifest.json" />
           <link
             rel="stylesheet"
