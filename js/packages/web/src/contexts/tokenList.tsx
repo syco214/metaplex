@@ -56,11 +56,7 @@ export function SPLTokenListProvider({ children = null as any }) {
 
   // Tokens with USD(x) quoted markets.
   const swappableTokens = useMemo(() => {
-    const tokens = mainnetTokens.filter((t: TokenInfo) => {
-      const isUsdxQuoted =
-        t.extensions?.serumV3Usdt || t.extensions?.serumV3Usdc;
-      return isUsdxQuoted;
-    });
+    const tokens = mainnetTokens
     tokens.sort((a: TokenInfo, b: TokenInfo) =>
       a.symbol < b.symbol ? -1 : a.symbol > b.symbol ? 1 : 0
     );
