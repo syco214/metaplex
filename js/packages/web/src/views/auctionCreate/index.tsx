@@ -734,6 +734,21 @@ const CategoryStep = (props: {
               </div>
             </Button>
           </Row>
+          <Row>
+            <Button
+              className="type-btn"
+              size="large"
+              onClick={() => props.confirm(AuctionCategory.Single)}
+            >
+              <div>
+                <div>Sell an Existing Item</div>
+                <div className="type-btn-description">
+                  Sell an existing item in your NFT collection, including Master
+                  NFTs
+                </div>
+              </div>
+            </Button>
+          </Row>
         </Col>
       </Row>
     </>
