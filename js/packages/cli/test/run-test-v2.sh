@@ -5,7 +5,7 @@
 # To suppress prompts, you will need to set/export the following variables:
 #
 # ENV_URL="mainnet-beta"
-# RPC="https://api.metaplex.solana.com//" # mainnet-beta
+# RPC="https://ssc-dao.genesysgo.net/" # mainnet-beta
 # RPC="https://psytrbhymqlkfrhudd.dev.genesysgo.net:8899/" # devnet
 
 # STORAGE="arweave-sol"
@@ -23,7 +23,7 @@
 # The custom RPC server option can be specified either by the flag -r <url>
 # Good RPCs:
 
-# "https://api.metaplex.solana.com//" 
+# "https://ssc-dao.genesysgo.net/" 
 # "https://psytrbhymqlkfrhudd.dev.genesysgo.net:8899/"
 
 # colors!
