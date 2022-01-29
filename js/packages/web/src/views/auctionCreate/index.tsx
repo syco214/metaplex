@@ -665,7 +665,6 @@ export const AuctionCreateView = () => {
       ['Price', priceAuction],
       ['Initial Phase', initialStep],
       ['Ending Phase', endingStep],
-      ['Participation NFT', participationStep],
       ['Review', reviewStep],
       ['Publish', waitStep],
       [undefined, congratsStep],
@@ -729,7 +728,7 @@ const CategoryStep = (props: {
               <div>
                 <div>Instant Sale</div>
                 <div className="type-btn-description">
-                  At a fixed price, sell a single Master NFT or copies of it
+                  Sell an existing item in your NFT collection at a specific price.
                 </div>
               </div>
             </Button>
@@ -741,10 +740,9 @@ const CategoryStep = (props: {
               onClick={() => props.confirm(AuctionCategory.Single)}
             >
               <div>
-                <div>Sell an Existing Item</div>
+                <div>Auction Sale</div>
                 <div className="type-btn-description">
-                  Sell an existing item in your NFT collection, including Master
-                  NFTs
+                  Sell an existing item in your NFT collection via Bidding.
                 </div>
               </div>
             </Button>
