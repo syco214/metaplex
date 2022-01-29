@@ -834,16 +834,6 @@ const InstantSaleStep = ({
                 <Option value={InstantSaleType.Single}>
                   Sell unique token
                 </Option>
-                {copiesEnabled && (
-                  <Option value={InstantSaleType.Limited}>
-                    Sell limited number of copies
-                  </Option>
-                )}
-                {!copiesEnabled && isMasterEdition && (
-                  <Option value={InstantSaleType.Open}>
-                    Sell unlimited number of copies
-                  </Option>
-                )}
               </Select>
               {isLimitedEdition && (
                 <>
