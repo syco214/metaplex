@@ -883,7 +883,7 @@ export const AuctionCard = ({
             fontSize: '2rem',
           }}
         >
-          Your sale has been ended please view your NFTs in{' '}
+          Your sale has ended please view your NFTs in{' '}
           <Link to="/artworks">My Items</Link>.
         </p>
         <Button
