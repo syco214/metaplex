@@ -51,7 +51,7 @@ export const MetaplexMenu = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const { connected } = useWallet();
 
-  if (width < 768)
+  if (width < 800)
     return (
       <>
         <Modal
@@ -62,7 +62,7 @@ export const MetaplexMenu = () => {
           closeIcon={
             <img
               onClick={() => setIsModalVisible(false)}
-              src={'/bhsg-logo.png'}
+              src={'/modals/close.svg'}
             />
           }
         >
