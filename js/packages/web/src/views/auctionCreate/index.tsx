@@ -643,7 +643,6 @@ export const AuctionCreateView = () => {
       ['Price', priceAuction],
       ['Initial Phase', initialStep],
       ['Ending Phase', endingStep],
-      ['Participation NFT', participationStep],
       ['Review', reviewStep],
       ['Publish', waitStep],
       [undefined, congratsStep],
