@@ -36,7 +36,7 @@ export const SalesListView = () => {
         headingText="Bounty Hunter Space Guild Auction House"
         subHeadingText="The Finest Specimen from the Solaris Systems"
         actionComponent={
-          <a href="https://discord.com/invite/bountyhunterspaceguild">
+          <a href="https://discord.gg/uxuaC9mjqx">
           <Button
             type="primary"
             size="middle"
